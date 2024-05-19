@@ -18,6 +18,7 @@ typedef struct contact {
 
 typedef struct trienode {
     struct trienode *children[NUM_CHARS];
+    //pour savoir si un noeud est le noeud final (la derniere lettre d'un nom)
     bool terminal;
     contact *info;
 } trienode;
